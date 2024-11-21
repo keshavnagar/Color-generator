@@ -18,5 +18,5 @@ function getrandomcolor(){
     let blue = Math.floor(Math.random()*255)
     let color = `rgb(${red},${green},${blue})`;
   
-    return color,color;
+    return color;
 }
