@@ -7,6 +7,8 @@ btn.addEventListener("click",function(){
     h2.innerText = color;
     let div = document.querySelector("div");
     div.style.backgroundColor = color;
+    h2.style.color= color;
+    btn.style.backgroundColor = color;
     console.log("color upadated")
 })
 
@@ -15,5 +17,6 @@ function getrandomcolor(){
     let green = Math.floor(Math.random()*255)
     let blue = Math.floor(Math.random()*255)
     let color = `rgb(${red},${green},${blue})`;
-    return color;
+  
+    return color,color;
 }
